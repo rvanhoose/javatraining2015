@@ -1,28 +1,28 @@
 package org.rollarobotics.training2015;
 
-import org.rollarobotics.training2015.inheritance.BaseClass9;
-import org.rollarobotics.training2015.inheritance.DerivedClass9;
+import org.rollarobotics.training2015.inheritance.Animal;
+import org.rollarobotics.training2015.inheritance.Dog;
+import org.rollarobotics.training2015.inheritance.Lion;
 
 /**
- * This program demonstrates the "abstract" keyword
+ * This program demonstrates object inheritance
  * @author rob
  */
 public class Exercise09 {
     public static void main(String[] args) {
+        Animal snail = new Animal("snail", true);
         
-        //Unlike our previous example, BaseClass9 is marked with the
-        // abstract keyword. We cannot create an instance of the class
-        // directly. We must derive from it in order to use it.
+        Dog tucker = new Dog("Tucker", "Rob");
         
-        //THIS DOESN'T WORK!!
-        //BaseClass9 base = new BaseClass9(4, 5);
+        Lion simba = new Lion();
         
-        DerivedClass9 derived = new DerivedClass9(4, 4);
+        System.out.println(snail);
+        snail.speak();
+        System.out.println(tucker);
+        tucker.speak();
+        System.out.println(simba);
+        simba.speak();
         
-        //The functionality in the abstract class is available, as is the
-        // functionality we added in the derived class.
-        System.out.println(derived.getMultiple());
-        System.out.println(derived.getSum());
     }
     
     

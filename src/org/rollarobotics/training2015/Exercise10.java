@@ -1,6 +1,7 @@
 package org.rollarobotics.training2015;
 
-import org.rollarobotics.training2015.inheritance.DerivedClass9;
+import org.rollarobotics.training2015.objectoriented.SecureAccount;
+
 
 /**
  * This program demonstrates the use of arrays
@@ -37,7 +38,7 @@ public class Exercise10 {
         //We can create arrays of any type
         String[] arrayOfStrings = new String[10];
         double[] arrayOfDoubles = new double[10];
-        DerivedClass9[] arrayOfDerivedClass9 = new DerivedClass9[10];
+        SecureAccount[] arrayOfDerivedClass9 = new SecureAccount[10];
         
         
         //Arrays can be initalized using array literal notation
